@@ -1,6 +1,6 @@
 // suna.js
 
-class SandStorm {
+class SunaArashi {
   constructor() {
     this.state = {
       windowWidth : window.innerWidth,
@@ -64,8 +64,7 @@ class SandStorm {
   }
 }
 
-sandStorm = new SandStorm()
-document.querySelector('#button').addEventListener('click', e => {
-  sandStorm.toggleStorm()
-  e.srcElement.blur()
-})
+sunaArashi = new SunaArashi()
+document.querySelector('#button').addEventListener('click',
+  sunaArashi.toggleStorm.bind(sunaArashi)
+)
